@@ -20,7 +20,6 @@
 		EFAC8BF22A6EFC7A00CC74A3 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFAC8BDF2A6EFC7A00CC74A3 /* Entypo.ttf */; };
 		EFAC8BF32A6EFC7A00CC74A3 /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFAC8BE02A6EFC7A00CC74A3 /* Fontisto.ttf */; };
 		EFAC8BF42A6EFC7A00CC74A3 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFAC8BE12A6EFC7A00CC74A3 /* Foundation.ttf */; };
-		EFAC8BF52A6EFC7A00CC74A3 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFAC8BE22A6EFC7A00CC74A3 /* Ionicons.ttf */; };
 		EFAC8BF62A6EFC7A00CC74A3 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFAC8BE32A6EFC7A00CC74A3 /* FontAwesome5_Solid.ttf */; };
 		EFAC8BF72A6EFC7A00CC74A3 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFAC8BE42A6EFC7A00CC74A3 /* FontAwesome.ttf */; };
 		EFAC8BF82A6EFC7A00CC74A3 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFAC8BE52A6EFC7A00CC74A3 /* Zocial.ttf */; };
@@ -348,7 +347,6 @@
 				EFAC8BFB2A6EFC7A00CC74A3 /* FontAwesome6_Solid.ttf in Resources */,
 				EFAC8BF42A6EFC7A00CC74A3 /* Foundation.ttf in Resources */,
 				EFAC8BFC2A6EFC7A00CC74A3 /* Feather.ttf in Resources */,
-				EFAC8BF52A6EFC7A00CC74A3 /* Ionicons.ttf in Resources */,
 				EFAC8BF82A6EFC7A00CC74A3 /* Zocial.ttf in Resources */,
 				EFAC8BF22A6EFC7A00CC74A3 /* Entypo.ttf in Resources */,
 				EFAC8BEE2A6EFC7A00CC74A3 /* FontAwesome5_Brands.ttf in Resources */,

@@ -1,12 +1,12 @@
-import Home from '../Components/Home';
-import Map from '../Components/Map';
-import Camera from '../Components/CameraPage';
-import NfcReader from '../Components/NfcReader';
+import Home from '../Screens/HomeScreen';
+import Camera from '../Screens/UploadScreen';
+import ProfileScreen from '../Screens/ProfileScreen';
 
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 import Icon from 'react-native-vector-icons/FontAwesome';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import WorkoutScreen from '../Screens/WorkoutScreen';
 
 const Tabs = createBottomTabNavigator();
 
@@ -29,18 +29,20 @@ export default function TabNaviagtion(): JSX.Element {
           <Icon name='camera' size={30} color={color}/>
         )
       }} />
-      <Tabs.Screen name="Map" component={Map} options={{
-        tabBarLabel: 'Map',
+      <Tabs.Screen name="WorkoutScreen" component={WorkoutScreen} options={{
+        tabBarLabel: 'AI Training',
         tabBarIcon: ({color}) => (
-          <Icon name='map-marker' size={30} color={color}/>
+          <Icon name='account_circle' size={30} color={color}/>
         )
-      }} />
-       <Tabs.Screen name="NFC" component={NfcReader} options={{
-        tabBarLabel: 'NFC',
+
+      }}/>
+      <Tabs.Screen name="Profile" component={ProfileScreen} options={{
+        tabBarLabel: 'Profile',
         tabBarIcon: ({color}) => (
-          <MaterialCommunityIcons name='nfc' size={30} color={color}/>
+          <Icon name='account_circle' size={30} color={color}/>
         )
-      }} />
+
+      }}/>
 
     </Tabs.Navigator>
   );

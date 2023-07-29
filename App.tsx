@@ -16,10 +16,12 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
-
+import WorkoutsScreen from './Screens/WorkoutScreen';
+import PunchScreen from './Screens/PunchScreen';
+import KickScreen from './Screens/KickScreen';
 import {NavigationContainer} from '@react-navigation/native';
 import TabNaviagtion from './AppNavigation/TabNavigation';
-
+import {createStackNavigator} from '@react-navigation/stack';
 import {
   Colors,
   DebugInstructions,
@@ -28,10 +30,21 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+const Stack = createStackNavigator();
+
 function App(): JSX.Element {
   return (
     <NavigationContainer>
-      <TabNaviagtion />
+      <Stack.Navigator initialRouteName="Tab">
+        <Stack.Screen
+          name="Tab"
+          component={TabNaviagtion}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen name="workout" component={WorkoutsScreen} />
+        <Stack.Screen name="punch" component={PunchScreen} />
+        <Stack.Screen name="kick" component={KickScreen} />
+      </Stack.Navigator>
     </NavigationContainer>
   );
 }
